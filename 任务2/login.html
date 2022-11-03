@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="./login.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="box">
+        <form action="javascript:;"><br>
+            <p class="big">姓名</p>
+            <input type="text" id="name" placeholder="请输入姓名" class="inputs">
+            <p class="big">邮件</p>
+            <input type="text" id="email" placeholder="请输入邮件" class="inputs">
+            <p class="big">年龄</p>
+            <input type="number" id="number" placeholder="请输入年龄" min="0" max="200" class="inputs">
+            <p class="big">哪个选项最能描述您当前的职位？</p>
+            <select name="" id="types">
+                <option value="">请选择你的职业</option>
+                <option value="1">学生</option>
+                <option value="2">上班族</option>
+                <option value="3">主播</option>
+                <option value="4">吃播</option>
+                <option value="5">其他</option>
+            </select>
+            <p class="ts1"></p>
+            <p class="big">你会向朋友推荐电影吗？</p>
+            <p><input type="radio" name="select" checked><label for="">会的</label></p>
+            <p><input type="radio" name="select"><label for="">不会</label> </p>
+            <p><input type="radio" name="select"><label for="">也许</label> </p>
+            <p class="big">你喜欢什么电影？</p>
+            <select name="" id="like_move" class="inputs">
+                <option value="">请选择你喜欢的类型</option>
+                <option value="1">搞笑类型</option>
+                <option value="2">恐怖类型</option>
+                <option value="3">动作类型</option>
+                <option value="4">冒险类型</option>
+                <option value="5">其他</option>
+            </select>
+            <div class="selects">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <p><input type="checkbox">Front-end Projects</p>
+                <p><input type="checkbox">Back-end Projects</p>
+                <p><input type="checkbox">Data Visualization</p>
+                <p><input type="checkbox">Challenges</p>
+                <p><input type="checkbox">Open Source Community</p>
+                <p><input type="checkbox">Gitter help rooms</p>
+                <p><input type="checkbox">Videos</p>
+                <p><input type="checkbox">City Meetups</p>
+                <p><input type="checkbox">Wiki</p>
+                <p><input type="checkbox">Forum</p>
+                <p><input type="checkbox">Additional Courses</p>
+            </div>
+            <p class="big">你有什么宝贵的建议吗?</p>
+            <textarea name="" id="sugges" cols="30" rows="10" placeholder="请输入您宝贵的建议"></textarea>
+            <p class="last_btn"><button>提交</button></p>
+        </form>
+    </div>
+</body>
+
+</html>

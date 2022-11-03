@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .box {
+            min-width: 650px;
+        }
+
+        .welcome {
+            color: white;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        }
+
+        .wel {
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .welcome_top {
+            z-index: 10;
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: #BE3144;
+        }
+
+        .welcome_top ul li {
+            line-height: 60px;
+            float: right;
+            height: 60px;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .content {
+            width: 100%;
+            background-color: #45567D;
+        }
+
+        .content h2 {
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 100px;
+            width: 400px;
+            border-bottom: 2px solid white;
+        }
+
+        .content-link .link {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .content-link .link .links {
+            margin-top: 10px;
+            width: 30%;
+            background-color: #BE3144;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .content-link .link .links {
+                width: 40%;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .content-link .link .links {
+                width: 70%;
+            }
+        }
+
+        .content-link .link .links p span {
+            color: transparent;
+        }
+
+        .content-link .link .links p:hover span {
+            color: orangered;
+        }
+
+        .content-link .link .links img {
+            width: 100%;
+        }
+
+        .content-link p {
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="welcome">
+            <div class="welcome_top">
+                <ul>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Work
+                    </li>
+                    <li>
+                        About
+                    </li>
+                </ul>
+            </div>
+            <div class="wel">
+                <h1>Hey I am Mimic</h1>
+                <p>a web developer</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>These are some of my projects</h2>
+            <div class="content-link">
+                <div class="link">
+                    <div class="links">
+                        <a href="../任务1/index.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>人物介绍<span>/&gt;</span>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="../任务2/login.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>表单<span>/&gt;</span>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="../任务3/index.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>产品登录<span>/&gt;</span>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="../任务4/index.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>技术文档<span>/&gt;</span>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="../任务3/index.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>产品登录<span>/&gt;</span>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="../任务4/index.html">
+                            <img src="./imgs/人物介绍.jpg" alt="">
+                        </a>
+                        <p>
+                            <span>&lt;</span>技术文档<span>/&gt;</span>
+                        </p>
+                    </div>
+                </div>
+                <p><span>Show all ></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

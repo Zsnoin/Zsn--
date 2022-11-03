@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+    min-width: 1080px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.login_top {
+    width: 100%;
+    height: 80px;
+}
+
+.login_top .imgs {
+    margin-top: 10px;
+    margin-left: 100px;
+    float: left;
+}
+
+.login_top ul {
+    margin-top: 10px;
+    margin-right: 70px;
+    float: right;
+    font-size: 13px;
+    color: grey;
+}
+
+.login_top ul img {
+    position: relative;
+    top: 5px;
+    height: 18px;
+}
+
+.login_top ul li {
+    margin-top: 5px;
+}
+
+.login_top ul li:hover {
+    color: orangered;
+}
+
+.login_content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    background: url(../imgs/背景图1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+.login_content .con_left {
+    top: 50px;
+    left: 200px;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+}
+
+.login_content .con_left a {
+    display: block;
+    width: 400px;
+    height: 300px;
+}
+
+.login_content .con_right {
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(233, 233, 242);
+}
+
+.login_content .con_right .change {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login_content .con_right .change img {
+    cursor: pointer;
+    height: 50px;
+}
+
+.login_content .con_right p {
+    width: 100%;
+    text-align: center;
+}
+
+.login_content .con_right ul {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.login_content .con_right ul li {
+    position: relative;
+    width: 100%;
+}
+
+.login_content .con_right ul li:nth-child(1) {
+    font-size: 20px;
+}
+
+.login_content .con_right ul li:nth-child(1) span {
+    box-sizing: border-box;
+}
+
+.login_content .con_right ul li:nth-child(1) span:nth-child(1) {
+    border-bottom: 2px solid grey;
+}
+
+.squ {
+    top: 10px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 0px;
+    background-color: aqua;
+}
+
+.squ img {
+    width: 42px;
+    height: 42px;
+}
+
+.login_content .con_right ul input,
+button {
+    outline: none;
+    margin-top: 10px;
+    width: 300px;
+    height: 42px;
+    border: none;
+}
+
+.login_content .con_right ul input {
+    padding-left: 60px;
+    width: 240px;
+}
+
+.login_content .con_right ul button {
+    background-color: rgb(255, 68, 0);
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.login_content .con_right p a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.login_content .con_right .login_p {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.login_content .con_right .last {
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.login_content .con_right .login_p img {
+    height: 15px;
+}
+
+
+.box2 {
+    display: none;
+    margin-top: 50px;
+}
+.box2 a{
+    text-decoration: none;
+    color: black;
+}
+.box2 p img{
+    width: 130px;
+    height: 130px;
+}
+.box2 p:nth-child(1) {
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: left;
+}
+.box2 p:nth-child(2) {
+    margin-top: 25px;
+}
+.open {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.open div:nth-child(1) {
+    text-align: center;
+    width: 30%;
+    height: 50px;
+}
+
+.open div:nth-child(2) {
+    width: 65%;
+    height: 50px;
+}
+
+.open div:nth-child(2) {
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+.final {
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.final .f_content {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.final .f_content .text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.final .f_content .text .ul_one {
+    height: 10px;
+}
+
+.final .f_content .text .ul_one li {
+    color: black;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    line-height: 12px;
+    margin-top: 10px;
+    height: 12px;
+    font-size: 12px;
+    border-right: 1px solid grey;
+    float: left;
+}
+
+.final .f_content .text .ul_two {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.final .f_content .text .ul_two li {
+    margin-top: 5px;
+    color: #413c3c;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.final .f_content .text .ul_two li span {
+    box-sizing: border-box;
+    border-right: 1px solid grey;
+    padding: 0 2px;
+}
+
+.final .f_content .text .ul_two li span:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.final .f_content .text .ul_two li .police img {
+    height: 18px;
+}
+
+.final .f_content .text .img {
+    padding: 0 10px;
+}
+
+.final .f_content .text .img a img {
+    height: 40px;
+}

@@ -1,0 +1,589 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+button {
+  cursor: pointer;
+}
+ul li {
+  cursor: pointer;
+}
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .ul_none {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .divs {
+    transition: all 0.5s;
+    width: 420px !important;
+  }
+  .content {
+    transition: all 0.5s;
+    width: 80% !important;
+  }
+  h2 {
+    margin-left: 40px !important;
+  }
+  .top_nav {
+    width: 80% !important;
+  }
+  .search {
+    width: 80% !important;
+  }
+  .text {
+    transform: scale(0.8);
+  }
+}
+.top_white {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  min-width: 990px;
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+.box .top_nav {
+  margin: 0 auto;
+  z-index: 100;
+  font-size: 12px;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+}
+.box .top_nav .left li {
+  color: grey;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+  min-width: 60px;
+  float: left;
+}
+.box .top_nav .left li .China {
+  z-index: 10;
+  left: -4.5px;
+  display: none;
+  overflow-y: scroll;
+  text-align: left;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  padding-left: 10px;
+}
+.box .top_nav .left li .China p:hover {
+  background-color: rgba(232, 223, 223, 0.3);
+}
+.box .top_nav .left li:nth-child(2) {
+  color: red;
+}
+.box .top_nav .left li:hover {
+  color: orangered;
+}
+.box .top_nav .left li:first-child:hover {
+  color: grey;
+}
+.box .top_nav .left li:first-child:hover .China {
+  display: block;
+}
+.box .top_nav .right li {
+  color: grey;
+  cursor: pointer;
+  min-width: 60px;
+  float: right;
+  margin: 0 7px;
+  position: relative;
+}
+.box .top_nav .right li:nth-child(5) {
+  padding-left: 10px;
+  background: url(imgs/收藏夹.png) no-repeat 0px 6px;
+}
+.box .top_nav .right li:nth-child(6) {
+  padding-left: 10px;
+  background: url(imgs/购物车-选中.png) no-repeat 0px 6px;
+}
+.box .top_nav .right li:last-child:hover .myTb {
+  display: block;
+}
+.box .top_nav .right li:nth-child(5):hover .like {
+  display: block;
+}
+.box .top_nav .right li:nth-child(2):hover .center {
+  display: block;
+}
+.box .top_nav .right li:nth-child(1):hover .contact {
+  display: block;
+}
+.box .top_nav .right li:hover {
+  color: orangered;
+}
+.box .top_nav .right li:hover p:hover {
+  background-color: rgba(232, 223, 223, 0.3);
+}
+.box .top_nav .right li .center,
+.box .top_nav .right li .like,
+.box .top_nav .right li .myTb {
+  z-index: 10;
+  display: none;
+  width: 100px;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+}
+.box .top_nav .right li .center p,
+.box .top_nav .right li .like p,
+.box .top_nav .right li .myTb p {
+  padding-left: 10px;
+  color: grey;
+}
+.box .top_nav .right li .contact {
+  z-index: 10;
+  display: none;
+  right: -5px;
+  width: 80px;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+}
+.box .top_nav .right li .contact p {
+  padding-left: 10px;
+  color: grey;
+}
+.box .search {
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.box .search .s_left {
+  text-align: center;
+  width: 250px;
+  height: 120px;
+}
+.box .search .s_left img {
+  margin-top: 30px;
+}
+.box .search .s_center {
+  position: relative;
+  width: 700px;
+  height: 120px;
+}
+.box .search .s_center input {
+  margin-top: 30px;
+  width: 610px;
+  height: 36px;
+  border: 2.5px solid orangered;
+  border-radius: 18px;
+  outline-color: orangered;
+  padding-left: 90px;
+}
+.box .search .s_center .left {
+  cursor: pointer;
+  text-align: center;
+  width: 70px;
+  border-right: 1px solid grey;
+  font-size: 15px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+.box .search .s_center .left:hover ul {
+  animation: animation 1s linear 0s 1;
+  display: block;
+}
+.box .search .s_center .left ul {
+  display: none;
+  position: absolute;
+  margin-left: -10px;
+  width: 70px;
+  background-color: white;
+}
+.box .search .s_center .left li {
+  line-height: 30px;
+  height: 30px;
+}
+.box .search .s_center .left li:hover {
+  color: orangered;
+}
+.box .search .s_center button {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #FCCF31 10%, #F55555 100%);
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+}
+.box .search .s_center p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.box .search .s_center p a {
+  font-size: 12px;
+  color: grey;
+}
+.box .search .s_center p a:hover {
+  color: orangered;
+}
+.box .search .s_right {
+  text-align: center;
+  width: 250px;
+  height: 120px;
+}
+.box .search .s_right p {
+  color: red;
+  margin-top: 10px;
+}
+.box .search .s_right img {
+  cursor: pointer;
+  width: 70px;
+}
+.box .search .s_right img:hover {
+  animation: animation 0.5s linear 0s 1;
+}
+.box .content {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 30px;
+}
+.box .content .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.box .content .top .left {
+  transition: all 0.5s;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: rgba(232, 223, 223, 0.3);
+  margin-top: 20px;
+  width: 300px;
+  height: 366px;
+}
+.box .content .top .left ul li {
+  padding-left: 20px;
+  margin-top: 15px;
+  color: #373434;
+}
+.box .content .top .left ul li:hover {
+  color: orangered;
+}
+.box .content .top .left ul li:hover a {
+  color: orangered;
+}
+.box .content .top .left ul li a {
+  color: #373434;
+  font-size: 15px;
+  margin: 0 15px;
+}
+.box .content .top .left ul li a:hover {
+  text-decoration: underline;
+}
+.box .content .top .left ul li:nth-child(1) {
+  font-size: 20px;
+}
+.box .content .top .right {
+  margin-top: 20px;
+  width: 865px;
+  height: 386px;
+}
+.box .content .top .right .ul_div {
+  background-color: rgba(232, 223, 223, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 30px;
+}
+.box .content .top .right .ul_div .right_top {
+  width: 100%;
+  height: 20px;
+}
+.box .content .top .right .ul_div .right_top li {
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border-right: 1px solid grey;
+  text-align: center;
+  width: 12.5%;
+  float: left;
+  color: grey;
+}
+.box .content .top .right .ul_div .right_top li:hover {
+  color: orangered !important;
+}
+.box .content .top .right .ul_div .right_top li:nth-child(1) {
+  color: orangered;
+}
+.box .content .top .right .ul_div .right_top li:nth-child(2) {
+  color: orangered;
+}
+.box .content .top .right .ul_div .right_top li:nth-child(3) {
+  color: greenyellow;
+}
+.box .content .top .right .ul_div .right_top li:last-child {
+  border-right: none;
+}
+.box .content .top .right .right_bot {
+  display: flex;
+  justify-content: space-between;
+}
+.box .content .top .right .right_bot .bot_left {
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 560px;
+}
+.box .content .top .right .right_bot .bot_left img {
+  width: 560px;
+}
+.box .content .top .right .right_bot .bot_right {
+  margin-top: 20px;
+  width: 280px;
+  overflow: hidden;
+}
+.box .content .top .right .right_bot .bot_right .hello:hover {
+  cursor: pointer;
+  color: orangered;
+}
+.box .content .top .right .right_bot .bot_right p {
+  margin-top: 25px;
+  text-align: center;
+}
+.box .content .top .right .right_bot .bot_right p img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box .content .top .right .right_bot .bot_right p button {
+  font-size: 15px;
+  width: 70px;
+  height: 38px;
+  border-radius: 19px;
+  border: none;
+  box-sizing: border-box;
+}
+.box .content .top .right .right_bot .bot_right p button:nth-child(1) {
+  background-color: orangered;
+  color: white;
+}
+.box .content .top .right .right_bot .bot_right p button:nth-child(2) {
+  background-color: orange;
+  color: white;
+}
+.box .content .top .right .right_bot .bot_right p button:nth-child(3) {
+  border: 1px solid orangered;
+  color: orangered;
+}
+.box .content .top .right .right_bot .bot_right ul {
+  width: 25%;
+  float: left;
+  cursor: pointer;
+}
+.box .content .top .right .right_bot .bot_right ul:hover {
+  color: orangered;
+}
+.box .content .top .right .right_bot .bot_right ul li {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.box .content .top .right .right_bot .bot_right ul li:nth-child(1) {
+  font-size: 20px;
+}
+.box .content .top .right .right_bot .bot_right .last {
+  margin-top: 100px;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.box .content .top .right .right_bot .bot_right .last span:nth-child(1) {
+  color: orangered;
+  background-color: rgba(245, 178, 85, 0.3);
+}
+.box .content .contents {
+  width: 100%;
+  margin: 30px auto;
+}
+.box .content .contents h2 {
+  margin-left: 20px;
+}
+.box .content .contents .rell {
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box .content .contents .rell .divs {
+  transition: all 0.5s;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  width: 376px;
+  height: 200px;
+}
+.box .content .contents .rell .divs:hover {
+  border: 1px solid orangered;
+  box-shadow: 0px 3px 10px rgba(217, 121, 31, 0.3);
+}
+.box .content .contents .rell .divs .big {
+  margin: 25px 10px;
+  width: 150px;
+  height: 150px;
+}
+.box .content .contents .rell .divs .small {
+  top: 5px;
+  position: relative;
+  height: 20px;
+}
+.box .content .contents .rell .divs .det {
+  padding-top: 20px;
+  width: 52%;
+  height: 200px;
+  float: right;
+}
+.box .content .contents .rell .divs .det .span {
+  font-size: 14px;
+}
+.box .content .contents .rell .divs .det p span {
+  border: 1px solid orangered;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: orangered;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.box .content .contents .rell .divs .det .price {
+  color: orangered;
+  font-size: 30px;
+  right: 120px;
+  bottom: 30px;
+  position: absolute;
+}
+.box .content .contents .rell .divs .det .price span {
+  font-size: 20px;
+}
+.final {
+  width: 100%;
+  background-color: white;
+}
+.final .f_content {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+.final .f_content .text {
+  width: 100%;
+  margin: 0 auto;
+}
+.final .f_content .text .ul_one {
+  height: 50px;
+}
+.final .f_content .text .ul_one li {
+  color: black;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 12px;
+  margin-top: 10px;
+  height: 12px;
+  font-size: 12px;
+  border-right: 1px solid grey;
+  float: left;
+}
+.final .f_content .text .ul_two {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.final .f_content .text .ul_two li {
+  margin-top: 5px;
+  color: #413c3c;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.final .f_content .text .ul_two li span {
+  box-sizing: border-box;
+  border-right: 1px solid grey;
+  padding: 0 2px;
+}
+.final .f_content .text .ul_two li span:hover {
+  cursor: pointer;
+  color: red;
+}
+.final .f_content .text .ul_two li .police img {
+  height: 18px;
+}
+.final .f_content .text .img {
+  padding: 0 10px;
+}
+.final .f_content .text .img a img {
+  height: 40px;
+}
+.aside {
+  cursor: pointer;
+  width: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  position: fixed;
+  right: 0px;
+  top: 200px;
+}
+.aside .ais1 {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  font-size: 12px;
+}
+.aside .ais1 img {
+  width: 30px;
+}
+.aside .ais1 a {
+  color: black;
+}
+.aside .ais_last {
+  transition: all 0.3s;
+  overflow: hidden;
+  width: 100%;
+  height: 0px;
+}
